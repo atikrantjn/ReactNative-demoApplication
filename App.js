@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View, ScrollView } from 'react-native';
 import ScrollViewComponent from './Components/ScrollViewComponent';
 import FlatListComponent from './Components/ListViewComponents/FlatListComponent';
 import SectionListComponent from './Components/ListViewComponents/SectionListComponent';
 import ModalComponent from './Components/ModalComponent/ModalComponent';
+import 'react-native-gesture-handler';
+import {NavigationContainer} from '@react-navigation/native';
 export default class App extends Component {
+	constructor(props) {
+		super(props);
+
+
+
+	}
+
+	
 	render() {
+
 		return (
-			<ScrollView>
-				<ScrollViewComponent />
-				<Text style={styles.sectionListHeading}>Flat List Component</Text>
-				<FlatListComponent />
-				<Text style={styles.sectionListHeading}>Section List Component</Text>
-				<SectionListComponent />
-				<ModalComponent />
-				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
-				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
-				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
-				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
-			</ScrollView>
+			<NavigationContainer>
+				<ScrollView>
+					<ScrollViewComponent />
+					<Text style={styles.sectionListHeading}>Flat List Component</Text>
+					<FlatListComponent />
+					<Text style={styles.sectionListHeading}>Section List Component</Text>
+					<SectionListComponent />
+					<ModalComponent />
+
+
+				</ScrollView>
+			</NavigationContainer>
+			
 		);
 	}
 }
