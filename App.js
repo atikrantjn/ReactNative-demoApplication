@@ -14,7 +14,10 @@ export default class App extends Component {
 				<Text style={styles.sectionListHeading}>Section List Component</Text>
 				<SectionListComponent />
 				<ModalComponent />
-				<Text>kskjfhskdjfhksdhkjhsdjkdhsfkhsdjk</Text>
+				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
+				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
+				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
+				<Text>kskjfhskdjfhksdhkjhsdjkdhsfdhfhfghfhfghfghfhfghfhfghfhfhfhgfhfghffhfkhsdjk</Text>
 			</ScrollView>
 		);
 	}
